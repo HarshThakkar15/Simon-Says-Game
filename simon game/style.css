@@ -1,18 +1,26 @@
 body{
     text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    margin: 0.5rem;
 }
 
 .btn{
-    height: 200px;
-    width: 200px;
+    height: 15vw;
+    width: 15vw;
     border-radius: 20%;
     border: 10px solid black;
-    margin: 2.5rem;
+    margin: 1.5rem;
 }
 
 .btn-container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; 
 }
 
 .yellow{
@@ -38,6 +46,58 @@ body{
 .userflash{
     background-color: green;
 }
-h3 {
-    font-size: 30px;
+
+/* Adjustments for small screens like mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    .btn {
+        height: 30vw;  
+        width: 30vw;
+        margin: 1rem;
+    }
+    .btn-container {
+        margin: 0.5rem;
+    }
+}
+
+/* Adjustments for larger screens like laptops and desktops */
+@media (min-width: 769px) and (max-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+    .btn {
+        height: 18vw;  
+        width: 18vw;
+    }
+}
+
+/* Adjustments for large desktop screens */
+@media (min-width: 1201px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .btn {
+        height: 10vw;  
+        width: 10vw;
+    }
 }
